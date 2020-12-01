@@ -1,8 +1,11 @@
 @import "scss/bootstrap";
 
-body{
-  max-width: 100vw;
+/* html elements*/
+body {
+	max-width: 100vw !important;
 }
+
+/*conatiner and boxes*/
 .container1{
   display: flex;
   flex-flow: wrap;
@@ -10,69 +13,112 @@ body{
   align-items: center;
 }
 
+.flexbox-column {
+	display: flex;
+	flex-flow: column;
+	justify-content: center !important;
+	text-align: center;
+}
+
+.footer {
+	background-color: #1F1F1F;
+	color: #F5F5F5;
+	border-top: 4px solid #3151C4;
+
+	.list-group-item {
+		background: none !important;
+	}
+}
+
+.flex-box {
+  display: flex;
+  flex-flow: row wrap;
+  .card{
+	  margin:1.5rem;
+	  position:relative;
+	  
+	  img{
+		  width:13rem;
+		  height:13rem;
+	  }
+  }
+}
+
+.input1 {
+	margin: .5rem .25rem;
+	width: 50%;
+	border-radius: 2px;
+	border: 1px solid #566D76;
+}
+
+
+/*utilities*/
 .white-font{
   color:white;
 }
 
-#nav1{
-  background-color: #E88821;
+.grey-font {
+	color: #666666;
 }
 
-.logo{
-  width:15rem;
+.bg-red {
+	background-color: #c60102;
+}
+.border-red {
+	border-color: #c60102;
 }
 
+.bg-blue {
+	background-color: #3151C4;
+}
+
+.bg-white{
+	background-color: white;
+}
+
+.bg-grey {
+	background-color: #e9ecef;
+}
+
+.border-blue {
+	border-color: #3151C4 !important;
+}
+
+.bg-image {
+	background-size: cover;
+	background-position: center right;
+	background-repeat: no-repeat;
+	min-height: 75vh;
+	width: 100%;
+}
+
+.bg-image-2 {
+	background-size: cover;
+	background-repeat:no-repeat;
+	min-height: 75vh;
+	width: 100%;
+}
 .item1{
   margin:.75rem;
 }
 
-.svg1{
-  width:2rem;
-  display: inline-block;
-  margin: 0px .5rem
-}
 
+/* img/icons */
 .textSvg{
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
 }
 
-.input1{
-  margin:.5rem .25rem;
-  width:50%;
-  border-radius: 2px;
-  border: 1px solid #566D76;
+.svg1 {
+	width: 1.5rem;
+	display: inline-block;
+	margin: 0px .5rem
 }
 
-.quote-box{
-  display:flex;
-  flex-flow: column;
-  padding: 1rem;
-  justify-content: center !important;
-  text-align: center;
+.logo {
+	width: 15rem;
 }
-
-.footer{
-  background-color: #1F1F1F;
-  color:#F5F5F5;
-  border-top:4px solid #E88821;
-
-  .list-group-item{
-    background: none !important;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -94,7 +140,7 @@ body{
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+	animation: App-logo-spin infinite 20s linear;
   }
 }
 
@@ -115,9 +161,9 @@ body{
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+	transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+	transform: rotate(360deg);
   }
 }

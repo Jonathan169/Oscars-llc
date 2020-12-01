@@ -9,7 +9,7 @@ class footer extends React.Component{
                 <div className="container1 justify-content-around">
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
-                            <div className="item1">
+                            <div className="">
                                 <img className="logo" src={process.env.PUBLIC_URL+'/assets/images/logo.png'} />
                             </div>
                         </li>

@@ -20,7 +20,7 @@ class reviews extends React.Component{
                 <main className="">
                     <section className="">
                      <div style={style} className="">
-                         {/* <img  src={process.env.PUBLIC_URL+'./assets/images/contractor-client.jpg'} /> */}
+                         
                          &nbsp;
                      </div>
                     </section>
