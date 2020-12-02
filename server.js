@@ -3,7 +3,7 @@ const express = require("express");
 // const logger = require('mogran');
 
 const app = express();
-const port = process.env.port || 3000;
+const port = process.env.port || 5000;
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json())
@@ -20,6 +20,9 @@ app.use(express.static("client/build"))
 // })
 
 //routes 
+var publicDir = require('path').join(__dirname, '/assets');
+app.use(express.static(publicDir)); 
+
 const routes=require("./routes");
 app.use(routes)
 

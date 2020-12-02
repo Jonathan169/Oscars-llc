@@ -3,6 +3,8 @@ import NavBar from './components/navBar'
 import Footer from './components/footer'
 import Quote from './components/quote'
 import GetQuote from './components/getquote'
+import axios from 'axios'
+import Images from './components/images'
 const style = {
     backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/sink-2.jpg)"
 }
@@ -17,12 +19,11 @@ class gallery extends React.Component {
     }
 
     renderImages = () => {
-        fetch('/gallery/' + this.state.images)
+        axios.get("/gallery/" + this.state.images)
             .then(res => {
                 console.log(res)
-                this.setState({ imageList: res.imageList })
+                this.setState({ imageList: res.data })
                 console.log(this.state)
-                
             })
     }
 
@@ -35,6 +36,7 @@ class gallery extends React.Component {
     }
 
     render() {
+        var self = this;
         return (
             <div className="">
                 <NavBar />
@@ -60,8 +62,8 @@ class gallery extends React.Component {
                                 </ol>
                             </nav>
 
-                            <div className="">
-
+                            <div className="" id="gallery" >
+                                <Images list={this.state.imageList} />
                             </div>
 
                         </div>
