@@ -62,7 +62,7 @@ class index extends React.Component{
                     </section>
                     <section className="container">
                         <div class="jumbotron w-auto mt-4">
-                            <h1 class="display-4">OUR BACKGROUND</h1>
+                            <h1 class="display-3">OUR BACKGROUND</h1>
                             <p class="lead">We are a full-service general
                             contractor specializing in design, remodeling,
                             and insurance restoration. Founded on the
@@ -87,7 +87,7 @@ class index extends React.Component{
                             </div>
                             <div className="col-sm-6 flexbox-column " >
                                 <div className="p-4">
-                                    <h2 className="display-4">Remodeling?</h2>
+                                    <h2 className="display-3">Remodeling?</h2>
                                     <p className="lead"
                                         style={{ textAlign: "right", lineHeight: "1.8" }}>
                                         Thinking about making some enhancements
@@ -111,7 +111,7 @@ class index extends React.Component{
                         <div className="flex-box w-100">
                             <div className="col-sm-6 flexbox-column " >
                                 <div className="p-4">
-                                    <h2 className="display-4">Remodeling?</h2>
+                                    <h2 className="display-3">Why Oscars LLC?</h2>
                                     <p className="lead"
                                         style={{ textAlign: "left", lineHeight: "1.8" }}>
                                         Thinking about making some enhancements
@@ -139,14 +139,13 @@ class index extends React.Component{
                     </section>
 
                     <section className="">
-
                         <GetQuote />
-
                     </section>
+
                     <section className="container">
                         <div className="text-center">
                             <h3 className="display-4">Our list of services</h3>
-                            <div className="flex-box p-4 justify-content-cente">
+                            <div className="flex-box p-4">
                                 <div class="card">
                                     <img src={ process.env.PUBLIC_URL+"assets/images/bathroom.jpg" } class="card-img-top" alt="..." />
                                     <div class="card-body">
@@ -181,9 +180,11 @@ class index extends React.Component{
                             </div>
                         </div>
                     </section>
+
                     <section className="">
                         <Quote />
                     </section>
+
                 </main>                
                 <Footer />
             </div>
