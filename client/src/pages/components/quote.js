@@ -4,10 +4,6 @@ const style = {
     backgroundPosition: "center right",
 }
 
-const style2 = {
-    backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/drywall-texture.jpg)",
-}
-
 class quote extends React.Component{
     state={}
 
@@ -33,6 +29,7 @@ class quote extends React.Component{
                         <input className="input1" type="text" for="phone" placeholder="Phone" />
                         <textarea className="input1" name="description" placeholder="How can we serve you?" rows="4" cols="50"></textarea>
                         <input className="input1" type="text" placeholder="How did you hear about us" />
+                        <button className="btn btn-danger mt-4">Submit</button>
                     </div>
                 </div>
             </div>

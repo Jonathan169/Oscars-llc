@@ -3,16 +3,10 @@ import NavBar from './components/navBar'
 import Footer from './components/footer'
 import Quote from './components/quote'
 import GetQuote from './components/getquote'
-import Carousel from 'react-bootstrap/Carousel';
-const style={
-  height:'70vh',
-  width:'100vw',
-  objectFit: 'cover',
+const style = {
+    backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/carousel3.jpg)"
 }
-
 class index extends React.Component{
-    state={}
-
     render(){
         return(
             <div className="">
@@ -21,44 +15,11 @@ class index extends React.Component{
 
                 <main className="">
                     <section className="">
-                        <Carousel style={{ borderBottom:"4px solid #1D3172"} }>
-                        <Carousel.Item interval={5000}>
-                          <img
-                            className="d-block w-100"
-                            style={style}
-                            src={process.env.PUBLIC_URL+'/assets/images/carousel1.jpg'}
-                            alt="First slide"
-                          />
-                          <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                          </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item interval={5000}>
-                          <img
-                            className="d-block w-100"
-                            style={style}
-                            src={process.env.PUBLIC_URL+'/assets/images/carousel2.jpg'}
-                            alt="Third slide"
-                          />
-                          <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                          </Carousel.Caption>
-                        </Carousel.Item>
-                            <Carousel.Item interval={5000}>
-                          <img
-                            className="d-block w-100"
-                            style={style}
-                            src={process.env.PUBLIC_URL+'/assets/images/carousel3.jpg'}
-                            alt="Third slide"
-                          />
-                          <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                          </Carousel.Caption>
-                        </Carousel.Item>
-                      </Carousel>
+                        <div className="bg-image-2 flexbox-column" style={style}>
+                            <div className="gradient-grey">
+                                <h2 className="display-2 white-font">Oscar's LLC</h2>
+                            </div>
+                        </div>
                     </section>
                     <section className="container">
                         <div class="jumbotron w-auto mt-4">
@@ -73,7 +34,7 @@ class index extends React.Component{
                             make your design dreams a reality, providing
                             a headache-free experience at a fair and
                                 reasonable price.</p>
-                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            <button class="btn btn-danger btn-lg"  >Learn more</button>
                             <hr class="my-4" />
 
                         </div>
@@ -155,7 +116,7 @@ class index extends React.Component{
                                 <div class="card">
                                     <img src={process.env.PUBLIC_URL + "assets/images/drywall-work.jpg"} class="card-img-top" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">drywall</h5>
+                                        <h5 class="card-title">Drywall</h5>
                                     </div>
                                 </div>
                                 <div class="card">

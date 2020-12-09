@@ -3,11 +3,7 @@ import NavBar from './components/navBar'
 import Footer from './components/footer'
 
 const style={
-    height:'70vh',
-    width:'100%',
-    backgroundSize: 'cover',
-    backgroundPosition:'right ',
-    backgroundImage: "url(" + process.env.PUBLIC_URL+ './assets/images/contractor-client.jpg'  + ")"
+    backgroundImage: "url(" + process.env.PUBLIC_URL+ './assets/images/contractor-client.jpg)'
   }
 class reviews extends React.Component{
     state={}
@@ -19,7 +15,7 @@ class reviews extends React.Component{
 
                 <main className="">
                     <section className="">
-                     <div style={style} className="">
+                     <div style={style} className="bg-image">
                          
                          &nbsp;
                      </div>

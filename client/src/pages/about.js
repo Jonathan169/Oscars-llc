@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from './components/navBar'
 import Footer from './components/footer'
-import Quote from './components/quote'
 import GetQuote from './components/getquote'
 const style = {
     backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/livingroom.jpg)"
@@ -35,14 +34,14 @@ class about extends React.Component{
                             make your design dreams a reality, providing
                             a headache-free experience at a fair and
                                     reasonable price.</p>
-                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            <button class="btn btn-primary btn-lg"  >Learn more</button>
                             <hr class="my-4" />
 
                         </div>
                     </section>
 
                     <section className="">
-
+                        <GetQuote />
                     </section>
                 </main>
                 <Footer />
