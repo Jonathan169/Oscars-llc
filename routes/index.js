@@ -10,6 +10,7 @@ router.post("/formsubmit",function(req,res){
 })
 
 router.post("/gallery", function (req, res) {
+    console.log(req.body)
     fs.readdir(path.join(__dirname, '../assets/images'), (err, files) => {
         var imageList = []
         if (req.body.imageRequest == "all") {
@@ -24,10 +25,11 @@ router.post("/gallery", function (req, res) {
                 }
             })
         }
-        if (imageList.length < 19) {
+        if (imageList.length > req.body.loadAmount) {
             imageList = imageList.splice(0, req.body.loadAmount)
         }
-        console.log(imageList)
+        //console.log(imageList.length, req.body.loadAmount)
+        //console.log(imageList)
         res.json(imageList)
     })
 })

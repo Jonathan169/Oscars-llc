@@ -35,12 +35,33 @@ class contact extends React.Component {
                             </div>
                         </div>
                     </section>
-                    <section className="container-fluid">
+                    <section className="container">
 
-                        <div className="row">
+                        <div className="row p-4">
                             <div className="col-md-8">
                                 <h2 className="display-3 ">Any Questions?</h2>
                                 <p className="lead">Please do not hesitate to reach out</p>
+                                <h3 className="mt-5">CONSULTATION STEPS</h3>
+                                <ul className="text-justify">
+                                    <li className="lead">
+                                        <span className="font-weight-bold">Discuss</span> wants, needs, goals, and budget with customer
+                                            </li>
+                                    <li className="lead">
+                                        <span className="font-weight-bold">Hold</span> a proposal meeting to review designs and contracts
+                                            </li>
+                                    <li className="lead">
+                                        <span className="font-weight-bold">Review</span> product choices, providing vendor lists and incorporating product purchase times
+                                            </li>
+                                    <li className="lead">
+                                        <span className="font-weight-bold">Create</span> construction schedule
+                                            </li>
+                                    <li className="lead">
+                                        <span className="font-weight-bold">Communicate</span> project progress with homeowner
+                                            </li>
+                                    <li className="lead">
+                                        <span className="font-weight-bold">Conduct</span> final walk-through with homeowner
+                                            </li>
+                                </ul>
                             </div>
                             <div className="col-md-4">
                                 <div className="justify-content-center d-flex" >

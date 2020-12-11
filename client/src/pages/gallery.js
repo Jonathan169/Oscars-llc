@@ -11,7 +11,8 @@ class gallery extends React.Component {
     state = {
         images: "all",
         imageList: [],
-        loadAmount:20
+        loadAmount: 20,
+        add:true,
     }
 
     componentDidMount() {
@@ -19,12 +20,29 @@ class gallery extends React.Component {
     }
 
     grabImagesFromServer = (images, loadMore) => {
-        axios.post("/gallery/", { imageRequest: images, loadAmount: this.state.loadAmount + loadMore || 20 })
+        if (this.state.add) {
+            var request = { imageRequest: images || this.state.images, loadAmount: this.state.loadAmount + loadMore || 20 }
+        } else {
+            var request = { imageRequest: images || this.state.images, loadAmount: this.state.loadAmount - loadMore || 20 }
+        }
+        axios.post("/gallery/", request)
             .then(res => {
+                console.log(res)
                 if (loadMore) {
-                    this.setState({ loadAmount: this.state.loadAmount + loadMore })
+                    console.log(res.data.length % 10)
+                    console.log(Number.isInteger(res.data.length / 10))
+
+                    if (Number.isInteger(res.data.length % 10) === false) {
+                        this.setState({ loadAmount: this.state.loadAmount + loadMore, imageList: res.data, add: false })
+                    } else {
+                        this.setState({ loadAmount: this.state.loadAmount + loadMore, imageList: res.data, add: true})
+                    }
                 } else {
-                    this.setState({ imageList: res.data, loadAmount: 20 })
+                    console.log(res.data.length % 10)
+                    if (Number.isInteger(res.data.length % 10) === false) {
+                        this.setState({ loadAmount: this.state.loadAmount + loadMore, imageList: res.data, add: false })
+                    }
+                    this.setState({ imageList: res.data, loadAmount: 20, images: images })
                 }
                 console.log(this.state)
             })
@@ -64,7 +82,7 @@ class gallery extends React.Component {
                                 </ol>
                             </nav>
 
-                            <Images list={this.state.imageList} handleClick={ this.handleClick } />
+                            <Images list={this.state.imageList} add={ this.state.add } handleClick={ this.handleClick } />
                         </div>
                     </section>
                     <section className="mt-4">

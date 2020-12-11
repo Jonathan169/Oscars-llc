@@ -106,7 +106,7 @@ class index extends React.Component{
                     <section className="container">
                         <div className="text-center">
                             <h3 className="display-4">Our list of services</h3>
-                            <div className="flex-box p-4">
+                            <div className="flex-box p-4 home-list">
                                 <div class="card">
                                     <img src={ process.env.PUBLIC_URL+"assets/images/bathroom.jpg" } class="card-img-top" alt="..." />
                                     <div class="card-body">

@@ -47,34 +47,38 @@ class images extends React.Component {
     }
 
     render() {
-        
-        return (<div id="gallery">
-            {this.props.list.map((item, index) => {
-                return <img src={"/images/" + item} key={index} id={index}
-                    onClick={this.handleShow} alt="gallery item" />
-                })
-            }
-            <Modal show={this.state.show} onHide={this.handleClose} centered>
-                <Modal.Header closeButton>
-                </Modal.Header>
-                <Modal.Body className="w-auto d-flex ">
-                    <div className="">
-                        <img src={process.env.PUBLIC_URL + "/assets/images/arrow-circle-left-solid.svg"}
-                            className="svg2 " style={{ left: '3.5%' }} id="left" alt="icon" onClick={ this.nextPhoto } />
-                    </div>
 
-                    <img src={this.state.target.src} key={this.state.target.id}
-                        id={this.state.target.id} className="gallery-img-lg" alt="gallery item" />
+        return (
+            <div id="gallery">
+                <div className="flex-box">
+                    {this.props.list.map((item, index) => {
+                        return <div className="m-auto"><img src={"/images/" + item} key={index} id={index}
+                            onClick={this.handleShow} alt="gallery item" /></div>
+                        })
+                    }
+                    <Modal show={this.state.show} onHide={this.handleClose} centered>
+                        <Modal.Header closeButton>
+                        </Modal.Header>
+                        <Modal.Body className="w-auto d-flex ">
+                            <div className="">
+                                <img src={process.env.PUBLIC_URL + "/assets/images/arrow-circle-left-solid.svg"}
+                                    className="svg2 " style={{ left: '3.5%' }} id="left" alt="icon" onClick={ this.nextPhoto } />
+                            </div>
 
-                    <div className="">
-                        <img src={process.env.PUBLIC_URL + "/assets/images/arrow-circle-right-solid.svg"}
-                            className="svg2 " style={{ right: '3.5%' }} id="right" alt="icon" onClick={this.nextPhoto}/>
-                    </div>
-                </Modal.Body>
-            </Modal>
-            <button className="btn bg-black white-font d-block justify-content-center mx-auto" data-load="10" onClick={ this.props.handleClick }>Load more</button>
+                            <img src={this.state.target.src} key={this.state.target.id}
+                                id={this.state.target.id} className="gallery-img-lg" alt="gallery item" />
 
-        </div>)
+                            <div className="">
+                                <img src={process.env.PUBLIC_URL + "/assets/images/arrow-circle-right-solid.svg"}
+                                    className="svg2 " style={{ right: '3.5%' }} id="right" alt="icon" onClick={this.nextPhoto}/>
+                            </div>
+                        </Modal.Body>
+                    </Modal>
+                </div>
+                <button className="btn bg-black mx-auto mt-4 white-font d-block"
+                    data-load="10" onClick={this.props.handleClick}>{ this.props.add? "Load More":"Show Less" }</button>
+
+            </div>)
     }
 }
 

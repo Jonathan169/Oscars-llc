@@ -37,28 +37,54 @@ body {
 }
 
 .flex-box {
-  display: flex;
-  flex-flow: row wrap;
-  .card{
-	  margin:1.5rem;
-	  position:relative;
-	  
-	  img{
-		  width:13rem;
-		  height:13rem;
-	  }
-  }
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	.card {
+		margin: 1.5rem;
+		position: relative;
+
+		img {
+			width: 13rem;
+			height: 13rem;
+		}
+	}
 }
 
-.service-cards{
-	.card{
-		border:none;
-		img{
-			width:18rem;
-			height:18rem;
+
+/*components*/
+#gallery {
+	border: 2px solid black;
+	padding: 1rem;
+
+	img {
+		width: 14rem;
+		height: auto;
+		margin: 1rem;
+
+		@include media-breakpoint-down(sm) {
+			margin: .4rem;
 		}
 	}
 
+	
+}
+.gallery-img-lg {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.service-cards {
+	.card {
+		border: none;
+
+		img {
+			width: 18rem;
+			height: 18rem;
+		}
+	}
 }
 
 .input1 {
@@ -94,6 +120,17 @@ body {
 	background-color: $red;
 	padding: .75rem 2.5rem 0rem;
 	font-size:1.75rem;
+}
+
+.about-cards {
+	p{
+		text-align:justify;
+	}
+	img {
+		width: 25rem;
+		float: right;
+		margin: .75rem
+	}
 }
 
 
@@ -152,22 +189,6 @@ body {
   margin:.75rem;
 }
 
-#gallery{
-	border:2px solid black;
-	padding:1rem;
-	img{
-		width:14rem;
-		height:auto;
-		margin:1rem;
-	}
-}
-
-.gallery-img-lg{
-	width:100%;
-	height:auto;
-	object-fit:cover;
-}
-
 #navbar2 {
 	.nav-item {
 		padding-top: 1.5rem;
@@ -209,15 +230,14 @@ body {
 
 
 
-
-
-
-
-
-
-
-.App {
-  text-align: center;
+/*media query*/
+@include media-breakpoint-down(sm){
+	.phone, .contact-us{
+		display:none;
+	}
+	.display-3, .display-4{
+		font-size:3rem;
+	}
 }
 
 .App-logo {

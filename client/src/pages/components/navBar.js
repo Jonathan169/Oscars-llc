@@ -17,7 +17,9 @@ class navBar extends React.Component{
                             <p style={{ fontSize: "1.5rem" }} className="lead mb-0 text-center">
                                 Call Us Toll Free At &nbsp;
                             </p>
-                            <p style={{ fontSize: "1.25rem", color: "#cf1717" }} className="text-center">952-454-7825</p>
+                            <p style={{ fontSize: "1.25rem", color: "#cf1717" }} className="text-center">
+                                (651) 329-7982
+                                </p>
                         </div>
                         <div className="contact-us">
                             <p className="white-font">Contact Us</p>
