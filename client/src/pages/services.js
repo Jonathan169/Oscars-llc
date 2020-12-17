@@ -71,6 +71,32 @@ class services extends React.Component {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="card mb-5" >
+                                <div className="row no-gutters">
+                                    <div className="col-md-4">
+                                        <img src={process.env.PUBLIC_URL + "assets/images/granite-display.jpg"}
+                                            className="card-img" alt="..." />
+                                    </div>
+                                    <div className="col-md-8">
+                                        <div class="card-body">
+                                            <h5 className="card-title">Granite</h5>
+                                            <p className="lead">We want to get your job right the first time. That
+                                            is why, when it comes to measuring, we are very particular. At Oscar's LLC,
+                                            your stone or quartz countertop surface is always custom-cut to your
+                                            specifications for cabinets. We'll walk you
+                                            through the entire experience of revitalizing your kitchen and bathroom.
+                                            From the selection of styles and design, to the professional installation,
+                                            we're always here for you.
+
+
+                                            </p>
+                                            <a type="button" className="btn btn-danger" href="/contact" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div className="card mb-5" >
                                 <div className="row no-gutters">
                                     <div className="col-md-4">

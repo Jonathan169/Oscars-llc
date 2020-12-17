@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './components/navBar'
 import Footer from './components/footer'
-import GetQuote from './components/getquote'
+import GetQuote from './components/quote'
 const style = {
     backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/livingroom.jpg)"
 }
@@ -27,16 +27,8 @@ class about extends React.Component{
                                 <div className="col-md-8">
                                     <div class="card-body">
                                         <h2 className="card-title">Meet Your General
-                                            Remodeling Contractors in Apple valley
+                                        Remodeling Contractors in Apple valley
                                         </h2>
-                                        <p className="lead">We are a full-service general contractor
-                                        specializing in design, remodeling, and insurance restoration.
-                                        Founded on the idea of forging long-term relationships with
-                                        customers and vendors, we have been serving the Minneapolis-St.
-                                        Paul area since 2010. Our goal is to cultivate your imagination
-                                        to make your design dreams a reality, providing a headache-free
-                                        experience at a fair and reasonable price.
-                                        </p>
                                         <p className="lead">
                                             Whether you're looking for a simple repair or a whole home
                                             renovation, we work with you to create a design that fits your
@@ -44,7 +36,16 @@ class about extends React.Component{
                                             project in a professional and timely manner, in accordance
                                             with all applicable building regulations.
                                         </p>
-                                        <h3 className="my-4">What puts us above another general 
+                                        <p className="lead">We are a full-service general contractor
+                                        specializing in design, remodeling.
+                                        Founded on the idea of forging long-term relationships with
+                                        customers and vendors, we have been serving the Minneapolis-St.
+                                        Paul area since 2010. Our goal is to cultivate your imagination
+                                        to make your design dreams a reality, providing a headache-free
+                                        experience at a fair and reasonable price.
+                                        </p>
+
+                                        <h3 className="mt-5">What puts us above another general 
                                         remodeling contractor in the Metro Area?
                                         </h3>
                                         <ul className="text-justify">
@@ -60,7 +61,19 @@ class about extends React.Component{
                                                 We offer fair estimates and spare no efforts to achieve customer satisfaction.
                                             </li>
                                         </ul>
-                                        <h3 className="my-4">Why should you trust MG Valley Construction?</h3>
+
+                                        <h3 className="mt-5">Why should you trust Oscar's LLC</h3>
+                                        <p className="lead">We don't do business the way many others do. High-quality 
+                                        craftsmanship, timely completions and finishing on budget are of course 
+                                            important, but there's so much more to home improvement. The most 
+                                            important factor in working with someone is being understood. We take the 
+                                            time to get to know you and your needs, really listen to your hopes and 
+                                            concerns, and put together a plan to complete your project with those 
+                                            priorities in mind. We also pursue advanced industry knowledge and 
+                                            training to refine our processes and deliver superior results. We provide 
+                                            mentoring to other professionals to improve our industry as a whole.
+
+                                        </p>
 
                                         
                                     </div>

@@ -21,29 +21,38 @@ class images extends React.Component {
         e.preventDefault()
         console.log(this.state)
         this.setState({ show: true, target: e.target })
-        console.log(this.state,"opening")
+        console.log(this.state, "opening right away")
+        setTimeout(() => { console.log(this.state, " 1 secs after opening"); }, 1000)
+
     }
 
     nextPhoto = e => {
         e.preventDefault()
         console.log(this.state)
         if (e.target.id === "left") {
-            this.setState({
-                target: {
-                    src: "/images/" + this.props.list[parseInt(this.state.target.id) - 1],
-                    id: parseInt(this.state.target.id) - 1,
-                }
-            })
-        } else {
-            this.setState({
-                target: {
-                    src: "/images/" + this.props.list[parseInt(this.state.target.id) + 1],
-                    id: parseInt(this.state.target.id) + 1,
-                }
-            })
+            if (parseInt(this.state.target.id) >= 1) {
+                this.setState({
+                    target: {
+                        src: "/images/" + this.props.list[parseInt(this.state.target.id) - 1],
+                        id: parseInt(this.state.target.id) - 1,
+                    }
+                })
+            }
+        }
+        else if (e.target.id === "right") {
+            console.log(this.props.list.length)
+
+            if (parseInt(this.state.target.id) < this.props.list.length -1) {
+                this.setState({
+                    target: {
+                        src: "/images/" + this.props.list[parseInt(this.state.target.id) + 1],
+                        id: parseInt(this.state.target.id) + 1,
+                    }
+                })
+            }
         }
         console.log(this.state, "after next button")
-        setTimeout(() => { console.log(this.state, " 3 secs after next button"); }, 3000)
+        setTimeout(() => { console.log(this.state, " 1 secs after next button"); }, 1000)
     }
 
     render() {
@@ -59,7 +68,7 @@ class images extends React.Component {
                     <Modal show={this.state.show} onHide={this.handleClose} centered>
                         <Modal.Header closeButton>
                         </Modal.Header>
-                        <Modal.Body className="w-auto d-flex ">
+                        <Modal.Body className="w-auto d-flex">
                             <div className="">
                                 <img src={process.env.PUBLIC_URL + "/assets/images/arrow-circle-left-solid.svg"}
                                     className="svg2 " style={{ left: '3.5%' }} id="left" alt="icon" onClick={ this.nextPhoto } />

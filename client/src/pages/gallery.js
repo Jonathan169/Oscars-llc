@@ -76,6 +76,7 @@ class gallery extends React.Component {
                                     <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="all" >All</p></li>
                                     <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="remodeling" >Remodeling</p></li>
                                     <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="tile">Tile</p></li>
+                                    <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="granite">Granite</p></li>
                                     <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="kitchen">Kitchen</p></li>
                                     <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="painting" >Painting</p></li>
                                     <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="bathroom">Bathrooms</p></li>
