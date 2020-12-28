@@ -29,8 +29,6 @@ class gallery extends React.Component {
             .then(res => {
                 console.log(res)
                 if (loadMore) {
-                    console.log(res.data.length % 10)
-                    console.log(Number.isInteger(res.data.length / 10))
 
                     if (Number.isInteger(res.data.length % 10) === false) {
                         this.setState({ loadAmount: this.state.loadAmount + loadMore, imageList: res.data, add: false })

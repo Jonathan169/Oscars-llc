@@ -22,7 +22,7 @@ class index extends React.Component{
                         </div>
                     </section>
                     <section className="container p-4">
-                        <div class="card">
+                        <div class="card border-0">
                             <div class="card-body">
                                 <h5 class="display-4 card-title">OUR BACKGROUND</h5>
                                 <p class="lead">We are a full-service general

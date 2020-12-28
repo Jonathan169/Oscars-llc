@@ -23,8 +23,11 @@ app.use(express.static("client/build"))
 var publicDir = require('path').join(__dirname, '/assets');
 app.use(express.static(publicDir)); 
 
-const routes=require("./routes");
+const routes = require("./routes");
+const emailer = require('./routes/nodemailer')
 app.use(routes)
+app.use(emailer)
+
 
 //listener
 app.listen(port,function(){

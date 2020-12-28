@@ -1,14 +1,6 @@
 const path = require('path');
 const router = require('express').Router();
 const fs = require('fs');
-
-require('dotenv').config();
-
-router.post("/formsubmit",function(req,res){
-    console.log(req.body)
-    res.send("howdy")
-})
-
 router.post("/gallery", function (req, res) {
     console.log(req.body)
     fs.readdir(path.join(__dirname, '../assets/images'), (err, files) => {
