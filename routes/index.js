@@ -26,7 +26,7 @@ router.post("/gallery", function (req, res) {
     })
 })
 router.use(function(req,res){
-    console.log("this one")
+    console.log(__dirname)
     res.sendFile(path.join(__dirname,"../client/build/index.html"))
 })
 
