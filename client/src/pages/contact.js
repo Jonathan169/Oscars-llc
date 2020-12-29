@@ -72,15 +72,11 @@ class contact extends React.Component {
                                         <input className="input1" onChange={this.handleChange} name="phone" type="text" for="phone" placeholder="Phone" />
                                         <textarea className="input1" onChange={this.handleChange} name="description" placeholder="How can we serve you?" rows="4" cols="50"></textarea>
                                         <input className="input1" onChange={this.handleChange} name="us" type="text" placeholder="How did you hear about us" />
-                                        <button onClick={ this.handleSubmit }className="btn btn-danger mt-4">Submit</button>
+                                        <button onClick={ this.handleSubmit } className="btn btn-danger mt-4">Submit</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                    </section>
-
-                    <section className="">
 
                     </section>
                 </main>

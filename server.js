@@ -8,7 +8,7 @@ app.use(express.json())
 
 // app.use(express.static("client/build"))
 
-//routes 
+// routes 
 var publicDir = require('path').join(__dirname, '/assets');
 app.use(express.static(publicDir)); 
 

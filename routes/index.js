@@ -1,6 +1,7 @@
 const path = require('path');
 const router = require('express').Router();
 const fs = require('fs');
+
 router.post("/gallery", function (req, res) {
     console.log(req.body)
     fs.readdir(path.join(__dirname, '../assets/images'), (err, files) => {
@@ -25,8 +26,9 @@ router.post("/gallery", function (req, res) {
         res.json(imageList)
     })
 })
+
 router.use(function(req,res){
-    res.sendFile(path.join(__dirname,"../client/build/index.html"))
+    res.sendFile(path.join(__dirname,"../client/build/index.html"), err => { if (err) { res.status(500).send(err) } })
 })
 
 module.exports= router;

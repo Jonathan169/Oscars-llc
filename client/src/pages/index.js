@@ -22,10 +22,10 @@ class index extends React.Component{
                         </div>
                     </section>
                     <section className="container p-4">
-                        <div class="card border-0">
-                            <div class="card-body">
-                                <h5 class="display-4 card-title">OUR BACKGROUND</h5>
-                                <p class="lead">We are a full-service general
+                        <div className="card border-0">
+                            <div className="card-body">
+                                <h5 className="display-4 card-title">OUR BACKGROUND</h5>
+                                <p className="lead">We are a full-service general
                                 contractor specializing in design, remodeling. Founded on the
                                 idea of forging long-term relationships with
                                 customers and vendors, we have been serving
@@ -34,7 +34,7 @@ class index extends React.Component{
                                 make your design dreams a reality, providing
                                 a headache-free experience at a fair and
                                 reasonable price.</p>
-                                <button class="btn btn-danger btn-lg ml-auto mb-5"  >Learn more</button>
+                                <button className="btn btn-danger btn-lg ml-auto mb-5"  >Learn more</button>
                             </div>
                         </div>
                     </section>
@@ -100,34 +100,34 @@ class index extends React.Component{
                         <div className="text-center">
                             <h3 className="display-4">Our list of services</h3>
                             <div className="flex-box py-4 home-list">
-                                <div class="card">
-                                    <img src={ process.env.PUBLIC_URL+"assets/images/bathroom.jpg" } class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Remodeling</h5>
+                                <div className="card">
+                                    <img src={ process.env.PUBLIC_URL+"assets/images/bathroom.jpg" } className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Remodeling</h5>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <img src={process.env.PUBLIC_URL + "assets/images/drywall-work.jpg"} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Drywall</h5>
+                                <div className="card">
+                                    <img src={process.env.PUBLIC_URL + "assets/images/drywall-work.jpg"} className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Drywall</h5>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <img src={process.env.PUBLIC_URL + "assets/images/tile.jpg"} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Flooring</h5>
+                                <div className="card">
+                                    <img src={process.env.PUBLIC_URL + "assets/images/tile.jpg"} className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Flooring</h5>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <img src={process.env.PUBLIC_URL + "assets/images/painting-work.jpg"} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Paint Indoors</h5>
+                                <div className="card">
+                                    <img src={process.env.PUBLIC_URL + "assets/images/painting-work.jpg"} className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Paint Indoors</h5>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <img src={process.env.PUBLIC_URL + "assets/images/shower2.jpg"} class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Tile</h5>
+                                <div className="card">
+                                    <img src={process.env.PUBLIC_URL + "assets/images/shower2.jpg"} className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Tile</h5>
                                     </div>
                                 </div>
 

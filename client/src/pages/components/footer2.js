@@ -1,7 +1,8 @@
 import React from 'react';
 
 
-function footer2() {
+class footer2 extends React.Component {
+	render(){
 	return (<a href="/contact" className="text-decoration-none">
 		<div className="footer2">
 				
@@ -10,6 +11,6 @@ function footer2() {
 				REQUEST A CONSULTATION
 			</p>
 		</div>
-	</a>)
+	</a>)}
 }
 export default footer2

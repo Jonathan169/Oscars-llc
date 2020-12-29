@@ -34,7 +34,7 @@ class services extends React.Component {
                                             className="card-img" alt="..." />
                                     </div>
                                     <div className="col-md-8">
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <h5 className="card-title">Tile</h5>
                                             <p className="lead">Here at Oscar's LLC, we know tile. We provide the best work wether that be a residential
                                             or commercial project. Our projects include hotels, restaurants, locker rooms, kitchens, 
@@ -55,7 +55,7 @@ class services extends React.Component {
                                             className="card-img" alt="drywall image" />
                                     </div>
                                     <div className="col-md-8">
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <h5 className="card-title">Drywall</h5>
                                             <p className="lead"> Drywall installation and repair is another 
                                             one of our leading services. We offer a wide range of services 
@@ -79,7 +79,7 @@ class services extends React.Component {
                                             className="card-img" alt="..." />
                                     </div>
                                     <div className="col-md-8">
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <h5 className="card-title">Granite</h5>
                                             <p className="lead">We want to get your job right the first time. That
                                             is why, when it comes to measuring, we are very particular. At Oscar's LLC,
@@ -104,7 +104,7 @@ class services extends React.Component {
                                             className="card-img" alt="..." />
                                     </div>
                                     <div className="col-md-8">
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <h5 className="card-title">Painting</h5>
                                             <p className="lead">The colors and textures of your interior 
                                             spaces play a big part in creating the feel of home. And When it comes 
@@ -131,8 +131,8 @@ class services extends React.Component {
                         <hr />
                         <div className="flex-box service-cards">
 
-                            <div class="card">
-                                <img src={process.env.PUBLIC_URL + "assets/images/bathroom-1.jpg"} class="card-img-top" alt="..." />
+                            <div className="card">
+                                <img src={process.env.PUBLIC_URL + "assets/images/bathroom-1.jpg"} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">Bathroom</h5>
                                     <ul className="">
@@ -144,10 +144,10 @@ class services extends React.Component {
                                 </div>
                             </div>
 
-                            <div class="card">
-                                <img src={process.env.PUBLIC_URL + "assets/images/kitchen-1.jpg"} class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Kitchen</h5>
+                            <div className="card">
+                                <img src={process.env.PUBLIC_URL + "assets/images/kitchen-1.jpg"} className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">Kitchen</h5>
                                     <ul className="">
                                         <li className="">Cabinets</li>
                                         <li className="">Counter tops</li>
@@ -157,10 +157,10 @@ class services extends React.Component {
                                 </div>
                             </div>
 
-                            <div class="card">
-                                <img src={process.env.PUBLIC_URL + "assets/images/fireplace-1.jpg"} class="card-img-top" alt="..." />
-                                <div class="card-body">
-                                    <h5 class="card-title">Remodeling</h5>
+                            <div className="card">
+                                <img src={process.env.PUBLIC_URL + "assets/images/fireplace-1.jpg"} className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">Remodeling</h5>
                                     <ul className="">
                                         <li className="">Room additions</li>
                                         <li className="">Chimney</li>

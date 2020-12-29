@@ -25,7 +25,7 @@ class about extends React.Component{
                         <div className="card mb-5 border-0" >
                             <div className="row no-gutters">
                                 <div className="col-md-8">
-                                    <div class="card-body">
+                                    <div className="card-body">
                                         <h2 className="card-title">Meet Your General
                                         Remodeling Contractors in Apple valley
                                         </h2>

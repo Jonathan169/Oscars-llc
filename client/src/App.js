@@ -12,12 +12,12 @@ function App(){
   return (
     <Router>
       <Switch>
-        <Route exact path="/" render={props=><Home {...props} />} />
-        <Route exact path="/about" render={props=><About {...props} />} />
-        <Route exact path="/contact" render={props=><Contact {...props} />} />
-        <Route exact path="/gallery" render={props=><Gallery {...props} />} />
-        <Route exact path="/reviews" render={props=><Reviews {...props} />} />
-        <Route exact path="/services" render={props=><Services {...props} />} />
+        <Route exact path="/"        component={Home} />
+        <Route exact path="/about"   component={About }/>
+        <Route exact path="/contact" component={Contact}/>
+        <Route exact path="/gallery" component={Gallery }/>
+        <Route exact path="/reviews" component={Reviews }/>
+        <Route exact path="/services"component={Services}/>
       </Switch>
     </Router>
   )
