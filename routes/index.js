@@ -27,7 +27,7 @@ router.post("/gallery", function (req, res) {
 })
 router.use(function(req,res){
     
-    fs.readdir(path.join(__dirname, '../'), (err, file) => {
+    fs.readdir(path.join(__dirname, '../client/build'), (err, file) => {
         console.log(file)
     })
     res.sendFile(path.join(__dirname,"../client/build/index.html"))
