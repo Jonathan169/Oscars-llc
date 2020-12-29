@@ -18,9 +18,9 @@ router.post("/formsubmit", function (req, res) {
         subject: 'testing',
         text:"trying to see if this will work",
     }
-    transporter.sendMail(mailOptions, function (err,data) {
-        err? res.send(err): res.send(data)
-    })
+    // transporter.sendMail(mailOptions, function (err,data) {
+    //     err? res.send(err): res.send(data)
+    // })
     
 })
 module.exports= router

@@ -27,8 +27,4 @@ router.post("/gallery", function (req, res) {
     })
 })
 
-router.use(function(req,res){
-    res.sendFile(path.join(__dirname,"../client/build/index.html"), err => { if (err) { res.status(500).send(err) } })
-})
-
 module.exports= router;
