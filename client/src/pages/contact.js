@@ -70,7 +70,7 @@ class contact extends React.Component {
                                         <input className="input1" onChange={this.handleChange} name="email" type="text" for="email" placeholder="Email Address" />
                                         <input className="input1" onChange={this.handleChange} name="address" type="text" for="address" placeholder="Address, City &amp; Zip code" />
                                         <input className="input1" onChange={this.handleChange} name="phone" type="text" for="phone" placeholder="Phone" />
-                                        <textarea className="input1" onChange={this.handleChange} name="description" placeholder="How can we serve you?" rows="4" cols="50"></textarea>
+                                        <textarea className="input1" onChange={this.handleChange} name="description" placeholder="Reason for Reaching out" rows="4" cols="50"></textarea>
                                         <input className="input1" onChange={this.handleChange} name="us" type="text" placeholder="How did you hear about us" />
                                         <button onClick={ this.handleSubmit } className="btn btn-danger mt-4">Submit</button>
                                     </div>
