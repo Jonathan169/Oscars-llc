@@ -1,0 +1,12 @@
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null" class="svg-inline--fa fa-phone-alt fa-w-16">
+
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="none" id="canvas_background" height="482" width="642" y="-1" x="-1"/>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <ellipse stroke="null" ry="229.66768" rx="232.83465" id="svg_2" cy="240" cx="320.00001" stroke-opacity="null" stroke-width="null" fill="#000000"/>
+  <path stroke="null" transform="rotate(5.966951370239258 321.2767639160148,241.9486846923824) " id="svg_1" d="m464.34409,298.68585l-66.37908,-25.74197a14.22409,12.87098 0 0 0 -16.59477,3.70041l-29.39645,32.49923a219.6792,198.78161 0 0 1 -105.01526,-95.0254l35.91582,-26.60003a14.18853,12.83881 0 0 0 4.08943,-15.01615l-28.44818,-60.06459a14.31892,12.95679 0 0 0 -16.29844,-7.45444l-61.63772,12.87098a14.22409,12.87098 0 0 0 -11.02367,12.54385c0,137.55864 123.21617,248.83901 274.99906,248.83901a14.22409,12.87098 0 0 0 13.86849,-9.97501l14.22409,-55.77426a14.39596,13.02651 0 0 0 -8.30331,-14.80163z" fill="#ffffff"/>
+ </g>
+</svg>
