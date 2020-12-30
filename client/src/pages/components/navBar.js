@@ -64,6 +64,9 @@ class navBar extends React.Component{
                           <li className="nav-item">
                                 <a className="nav-link white-font" href="/services">Services</a>
                           </li>
+                          <li className="nav-item">
+                             <a className="nav-link white-font" href="reviews">Reviews</a>
+                          </li>
                         </ul>
                     </nav>
                 </div>
@@ -72,6 +75,3 @@ class navBar extends React.Component{
     }
 }
 export default navBar;
-//<li className="nav-item">
-//    <a className="nav-link white-font" href="reviews">Reviews</a>
-//</li>
