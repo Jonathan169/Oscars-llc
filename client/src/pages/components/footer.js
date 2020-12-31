@@ -26,11 +26,10 @@ class footer extends React.Component{
                         
                         <li className="list-group-item">
                             <ul className="list-group list-group-flush">
-                                <li className="list-group-item">Cras justo odio</li>
-                                <li className="list-group-item">Dapibus ac facilisis in</li>
-                                <li className="list-group-item">Morbi leo risus</li>
-                                <li className="list-group-item">Porta ac consectetur ac</li>
-                                <li className="list-group-item">Vestibulum at eros</li>
+                                <li className="list-group-item p-1"><p className="h4">Contact Us</p></li>
+                                <li className="list-group-item p-1"><p><strong>Phone:</strong><br/><a className="white-font" href="tel:6123335577">612-333-5577</a></p></li>
+                                <li className="list-group-item p-1"><p><strong>Email:</strong><br/>OscarsLLC@oscarsllc.com</p></li>
+                                <li className="list-group-item p-1"><p><strong>Addresses:</strong><br/>5775 Wayzata Blvd., Suite 700<br/>St. Louis Park, MN 55416</p></li>
                             </ul>
                         </li>
 

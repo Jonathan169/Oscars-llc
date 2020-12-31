@@ -13,19 +13,6 @@ class Demo extends Component {
 const style={
     backgroundImage: "url(" + process.env.PUBLIC_URL+ './assets/images/contractor-client.jpg)'
 }
-// function load (){
-//     wpac_init = window.wpac_init || [];
-//     wpac_init.push({widget: 'Review', id: 28775});
-//     (function() {
-//         if ('WIDGETPACK_LOADED' in window) return;
-//         WIDGETPACK_LOADED = true;
-//         var mc = document.createElement('script');
-//         mc.type = 'text/javascript';
-//         mc.async = true;
-//         mc.src = 'https://embed.widgetpack.com/widget.js';
-//         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-//     })()
-// }
 class reviews extends React.Component{
     state={}
 
@@ -36,10 +23,10 @@ class reviews extends React.Component{
 
                 <main className="">
                     <section className="">
-                     <div style={style} className="bg-image">
-                         
-                         &nbsp;
-                     </div>
+                        <div style={style} className="bg-image">
+
+                            &nbsp;
+                        </div>
                     </section>
 
                     <section className="container py-4">

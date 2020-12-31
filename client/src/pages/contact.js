@@ -2,7 +2,6 @@ import React from 'react';
 import NavBar from './components/navBar'
 import Footer from './components/footer'
 import axios from 'axios'
-import Quote from './components/quote'
 const style = {
     backgroundImage: "url(" + process.env.PUBLIC_URL + './assets/images/contractor-client.jpg)'
 }
