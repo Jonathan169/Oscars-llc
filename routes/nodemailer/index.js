@@ -18,7 +18,7 @@ async function sendMail(mailOptions) {
             service: 'gmail',
             auth: {
                 type:'OAuth2',
-                user: 'oscarchavez@oscarsllc.com',
+                user: 'oscarsllc@oscarsllc.com',
                 clientId: CLIENT_ID,
                 clientSecret : CLIENT_SECRET,
                 refreshToken : REFRESH_TOKEN,
@@ -38,7 +38,7 @@ async function sendMail(mailOptions) {
 router.post("/formsubmit", function (req, res) {
     console.log(req.body)
     let mailOptions = {
-        from: 'oscarchavez@oscarsllc.com',
+        from: 'oscarsllc@oscarsllc.com',
         to: req.body.email ,
         subject: 'testing',
         text:"Thank you for reaching out!",
@@ -56,7 +56,7 @@ router.post("/formsubmit", function (req, res) {
 
     mailOptions = {
         from: 'oscarchavez@oscarsllc.com',
-        to: "oscarchavez@oscarsllc.com",
+        to: "oscarsllc@oscarsllc.com",
         subject: 'testing',
         text:"trying to see if this will work",
         html:`<h1>testing the email server please ignore</h1>

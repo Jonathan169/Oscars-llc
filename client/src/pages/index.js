@@ -85,7 +85,7 @@ class index extends React.Component{
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-md-6 bg-image"
+                            <div className="col-md-6 bg-image "
                                 style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/shower.jpg " }}>
                                 &nbsp;
                             </div>
@@ -96,7 +96,7 @@ class index extends React.Component{
                         <GetQuote />
                     </section>
 
-                    <section className="container">
+                    <section className="container pt-4">
                         <div className="text-center">
                             <h3 className="display-4">Our list of services</h3>
                             <div className="flex-box py-4 home-list">

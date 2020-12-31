@@ -1,0 +1,5 @@
+.wp-google-badge, .wp-google-badge-fixed{
+	position: fixed !important;
+  right:0px !important;
+  bottom: 90px !important;
+}

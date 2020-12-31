@@ -32,14 +32,14 @@ class navBar extends React.Component{
                         </div>
                         <div className="phone">
                             <p style={{ fontSize: "1.5rem" }} className="lead mb-0 text-center">
-                                Call Us Toll Free At &nbsp;
+                                Call Us At &nbsp;
                             </p>
                             <p style={{ fontSize: "1.25rem", color: "#cf1717" }} className="text-center">
                                 (651) 329-7982
                                 </p>
                         </div>
                         <div className="contact-us" onClick={ onClick }>
-                            <p className="white-font">Contact Us</p>
+                            <p className="white-font font-weight-light">Contact Us</p>
                         </div>
                         <div id="hamburger" className="item1">
                             <img className="svg3" alt="logo" onClick={this.changeNavState }

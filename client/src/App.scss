@@ -45,7 +45,7 @@ body {
 .footer2 {
 	position: fixed;
 	bottom: 0;
-	width: 100%;
+	width: 100vw;
 	background-color: #9e002c;
 	display: none;
 	text-align: center;
@@ -274,6 +274,10 @@ body {
 	width: 3rem;
 }
 
+.svg4 {
+	width: 2rem;
+}
+
 .logo {
 	width: 11rem;
 }
@@ -293,7 +297,7 @@ body {
 		justify-content: center;
 	}
 
-	#getQuote {
+	#getQuote, #wpac-google-review {
 		display: none
 	}
 
