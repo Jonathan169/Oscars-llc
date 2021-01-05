@@ -75,24 +75,24 @@ class contact extends React.Component {
                                     <div class="form-row">
                                         <label for="validationDefault01">Name</label>
                                         <input onChange={this.handleChange} placeholder="John Smith" name="name" type="text" class="form-control " id="validationDefault01" required />
-                                        
+
                                         <label for="validationDefault02">Email</label>
                                         <input onChange={this.handleChange} placeholder="John.smith@gmail.com" name="email" type="text" for="email" class="form-control" id="validationDefault02" required />
                                         <div id="emailFeedback" class="invalid-feedback">Email format invalid.</div>
-                                       
+
                                         <label for="validationDefault03">City</label>
                                         <input onChange={this.handleChange} placeholder="Minneapolis" name="city" type="text" class="form-control" id="validationDefault03" required />
-                                        
+
                                         <label for="validationDefault04">Phone</label>
                                         <input onChange={this.handleChange} placeholder="xxx-xxx-xxxx" name="phone" type="text" class="form-control" id="validationDefault04" required />
-                                        
+
                                         <label for="validationDefault05">How did you hear about us</label>
                                         <input onChange={this.handleChange} placeholder="Google, Facebook, etc..." name="us" type="text" class="form-control" id="validationDefault05" />
-                                        
+
                                         <label for="validationDefault06">Reason for Reaching Out</label>
                                         <textarea onChange={this.handleChange} placeholder="I have a question about ..." name="description" class="form-control" id="validationDefault06" rows='2' required ></textarea>
-                                        
-                                        <button type="submit" className="btn btn-danger mx-auto mt-4">Submit</button>
+
+                                        <button type="submit" className="btn btn-primary mx-auto mt-4">Submit</button>
                                     </div>
                                 </form>
                             </div>

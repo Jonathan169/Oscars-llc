@@ -61,7 +61,7 @@ class quote extends React.Component{
                                     <label for="validationDefault06">Reason for Reaching Out</label>
                                     <textarea onChange={this.handleChange} placeholder="I have a question about ..." name="description" class="form-control" id="validationDefault06" rows='2' required ></textarea>
                                     
-                                    <button type="submit" className="btn btn-danger mx-auto mt-4">Submit</button>
+                                    <button type="submit" className="btn btn-primary mx-auto mt-4">Submit</button>
                                 </div>
                             </form>
                         </div>

@@ -9,7 +9,7 @@ class getQuote extends React.Component {
                         Call (877) 516-3844 for a free quote 
                         on our range of home restoration services
                     </p>
-                    <button className="btn btn-danger m-2"> Contact Us</button>
+                    <button className="btn btn-primary m-2"> Contact Us</button>
                 </div>
             </div>
             )

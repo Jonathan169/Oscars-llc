@@ -26,15 +26,13 @@ class navBar extends React.Component{
                     <nav className="d-flex justify-content-between">
                         <div className="item1">
                             <a href="/"><img className="logo" alt="logo"
-                                src={process.env.PUBLIC_URL + '/assets/images/logo.png'} /></a>
+                                src={process.env.PUBLIC_URL + '/assets/images/logo-2.png'} /></a>
                         </div>
                         <div className="phone">
                             <p style={{ fontSize: "1.5rem" }} className="lead mb-0 text-center">
                                 Call Us At &nbsp;
                             </p>
-                            <p style={{ fontSize: "1.25rem", color: "#cf1717" }} className="text-center">
-                                (651) 329-7982
-                                </p>
+                            <a href="tel:(651) 329-7982" style={{ fontSize: "1.5rem" }} className="blue-font text-decoration-none">(651) 329-7982</a>
                         </div>
                         <div className="contact-us" onClick={ onClick }>
                             <p className="white-font font-weight-light">Contact Us</p>

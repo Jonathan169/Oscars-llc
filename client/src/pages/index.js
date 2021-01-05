@@ -34,7 +34,7 @@ class index extends React.Component{
                                 make your design dreams a reality, providing
                                 a headache-free experience at a fair and
                                 reasonable price.</p>
-                                <button className="btn btn-danger btn-lg ml-auto mb-5"  >Learn more</button>
+                                <button className="btn btn-primary btn-lg ml-auto mb-5"  >Learn more</button>
                             </div>
                         </div>
                     </section>

@@ -81,7 +81,7 @@ class gallery extends React.Component {
                         <div className="container">
                             <h2 className="display-2 my-4 text-center">Our Work</h2>
                             <Dropdown>
-                              <Dropdown.Toggle variant="dark" className="mb-2" id="dropdown-basic">
+                              <Dropdown.Toggle variant="primary" className="mb-2" id="dropdown-basic">
                               {this.state.images || "Filter"}
                               </Dropdown.Toggle>
 

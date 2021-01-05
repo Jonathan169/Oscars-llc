@@ -13,7 +13,7 @@ class footer extends React.Component{
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">
                                     <div className="">
-                                        <img className="logo" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/logo.png'} />
+                                        <img className="logo" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/logo-2.png'} />
                                     </div>
                                 </li>
                                 {/* <li className="list-group-item">MN License #BC665142</li> */}
