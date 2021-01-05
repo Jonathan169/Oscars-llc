@@ -18,8 +18,6 @@ class navBar extends React.Component{
         }
         setTimeout(() => { console.log(this.state) })
     }
-
-
     render(){
         return(
             <header className="pb-5">

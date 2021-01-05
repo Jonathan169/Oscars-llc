@@ -4,15 +4,17 @@ import Footer from './components/footer'
 import axios from 'axios'
 import Images from './components/images'
 import Quote from './components/quote'
+import Dropdown from 'react-bootstrap/Dropdown'
 const style = {
     backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/sink-2.jpg)"
 }
 class gallery extends React.Component {
     state = {
-        images: "all",
+        images:"",
         imageList: [],
         loadAmount: 20,
         add:true,
+        show:false,
     }
 
     componentDidMount() {
@@ -45,10 +47,20 @@ class gallery extends React.Component {
                 console.log(this.state)
             })
     }
-
+    dropdown = e =>{
+        if(this.state.show){
+            document.getElementById("dropdownfilterButton").classList.remove("d-block")
+            this.setState({show:false})
+        }
+        else{
+            document.getElementById("dropdownfilterButton").classList.add("d-block")
+            this.setState({show:true})
+        }
+    }
     handleClick = e => {
         e.preventDefault()
         console.log(e.target.dataset)
+        // this.dropdown()
         this.grabImagesFromServer(e.target.dataset.value, parseInt(e.target.dataset.load))
     }
 
@@ -68,18 +80,21 @@ class gallery extends React.Component {
                     <section className="">
                         <div className="container">
                             <h2 className="display-2 my-4 text-center">Our Work</h2>
+                            <Dropdown>
+                              <Dropdown.Toggle variant="dark" className="mb-2" id="dropdown-basic">
+                              {this.state.images || "Filter"}
+                              </Dropdown.Toggle>
 
-                            <nav aria-label="breadcrumb">
-                                <ol className="breadcrumb mb-1 pb-0">
-                                    <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="all" >All</p></li>
-                                    <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="remodeling" >Remodeling</p></li>
-                                    <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="tile">Tile</p></li>
-                                    <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="granite">Granite</p></li>
-                                    <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="kitchen">Kitchen</p></li>
-                                    <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="painting" >Painting</p></li>
-                                    <li className="breadcrumb-item"><p onClick={this.handleClick} data-value="bathroom">Bathrooms</p></li>
-                                </ol>
-                            </nav>
+                              <Dropdown.Menu>
+                              <Dropdown.Item onClick={this.handleClick} data-value="All" >All</Dropdown.Item>
+                                <Dropdown.Item onClick={this.handleClick} data-value="Remodeling" >Remodeling</Dropdown.Item>
+                                <Dropdown.Item onClick={this.handleClick} data-value="Tile">Tile</Dropdown.Item>
+                                <Dropdown.Item onClick={this.handleClick} data-value="Granite">Granite</Dropdown.Item>
+                                <Dropdown.Item onClick={this.handleClick} data-value="Kitchen">Kitchen</Dropdown.Item>
+                                <Dropdown.Item onClick={this.handleClick} data-value="Painting" >Painting</Dropdown.Item>
+                                <Dropdown.Item onClick={this.handleClick} data-value="Bathroom">Bathrooms</Dropdown.Item>
+                              </Dropdown.Menu>
+                            </Dropdown>
 
                             <Images list={this.state.imageList} add={ this.state.add } handleClick={ this.handleClick } />
                         </div>

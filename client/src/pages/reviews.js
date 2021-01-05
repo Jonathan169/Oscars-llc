@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet'
 import ScriptTag from 'react-script-tag';
 
 class Demo extends Component {
- 
     render() {
         return (<ScriptTag src="https://apps.elfsight.com/p/platform.js" defer/>);
     }

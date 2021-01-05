@@ -1,6 +1,7 @@
 var router = require('express').Router();
 const nodeMailer = require('nodemailer');
 const { google } =  require('googleapis')
+const validator = require("email-validator")
 require('dotenv').config()
 
 const CLIENT_ID = '421023991698-l56vokj5ku9ei383b46ng7c4s506bquf.apps.googleusercontent.com'
@@ -47,32 +48,31 @@ router.post("/formsubmit", function (req, res) {
     }
     sendMail(mailOptions).then(results => {
         console.log('email sent...', results) 
-        res.send(results)
+        mailOptions = {
+            from: 'oscarchavez@oscarsllc.com',
+            to: "oscarsllc@oscarsllc.com",
+            subject: 'testing',
+            text:"trying to see if this will work",
+            html:`<h1>testing the email server please ignore</h1>
+                  <h3>Name : ${req.body.name} </h3>
+                  <h3>Phone Number: ${req.body.phone} </h3>
+                  <h3>Address : ${req.body.address} </h3>
+                  <h3>reason for reaching out : ${req.body.description} </h3>
+                  <h3>how did you hear about us : ${req.body.us} </h3>`,
+        }
+        sendMail(mailOptions).then(results => {
+            console.log('email sent...', results) 
+            res.send(results)
+        })
+        .catch(error => {
+            console.log(error)
+            res.send(error)
+        })
     })
     .catch(error => {
         console.log(error)
         res.send(error)
     })
 
-    mailOptions = {
-        from: 'oscarchavez@oscarsllc.com',
-        to: "oscarsllc@oscarsllc.com",
-        subject: 'testing',
-        text:"trying to see if this will work",
-        html:`<h1>testing the email server please ignore</h1>
-              <h3>Name : ${req.body.name} </h3>
-              <h3>Phone Number: ${req.body.phone} </h3>
-              <h3>Address : ${req.body.address} </h3>
-              <h3>reason for reaching out : ${req.body.description} </h3>
-              <h3>how did you hear about us : ${req.body.us} </h3>`,
-    }
-    sendMail(mailOptions).then(results => {
-        console.log('email sent...', results) 
-        res.send(results)
-    })
-    .catch(error => {
-        console.log(error)
-        res.send(error)
-    })
 })
 module.exports= router

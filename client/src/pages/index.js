@@ -85,8 +85,8 @@ class index extends React.Component{
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-md-6 bg-image "
-                                style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/shower.jpg " }}>
+                            <div className="col-md-6 bg-image-3 "
+                                style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/shower-2.jpg " }}>
                                 &nbsp;
                             </div>
                         </div>
@@ -107,9 +107,9 @@ class index extends React.Component{
                                     </div>
                                 </div>
                                 <div className="card">
-                                    <img src={process.env.PUBLIC_URL + "assets/images/drywall-work.jpg"} className="card-img-top" alt="..." />
+                                    <img src={process.env.PUBLIC_URL + "assets/images/granite-display.jpg"} className="card-img-top" alt="..." />
                                     <div className="card-body">
-                                        <h5 className="card-title">Drywall</h5>
+                                        <h5 className="card-title">Granite</h5>
                                     </div>
                                 </div>
                                 <div className="card">
@@ -130,6 +130,12 @@ class index extends React.Component{
                                         <h5 className="card-title">Tile</h5>
                                     </div>
                                 </div>
+                                <div className="card">
+                                    <img src={process.env.PUBLIC_URL + "assets/images/drywall-work.jpg"} className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Drywall</h5>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -139,7 +145,7 @@ class index extends React.Component{
                         <Quote />
                     </section>
 
-                </main>                
+                </main>     
                 <Footer />
             </div>
         )

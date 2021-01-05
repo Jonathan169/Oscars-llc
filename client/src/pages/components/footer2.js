@@ -2,8 +2,10 @@ import React from 'react';
 
 
 class footer2 extends React.Component {
-	render(){
-	return (<a href="/contact" className="text-decoration-none">
+	render(){ return (
+	<>
+	<div id="wpac-google-review"></div>
+	<a href="/contact" className="text-decoration-none">
 		<div className="footer2">
 			{/* <div className="col-6">
 				<p className="text-center">
@@ -19,6 +21,8 @@ class footer2 extends React.Component {
 					REQUEST A CONSULTATION
 				</p>
 		</div>
-	</a>)}
+	</a>
+	</>
+	)}
 }
 export default footer2

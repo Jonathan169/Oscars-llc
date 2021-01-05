@@ -2,6 +2,8 @@ import React from 'react';
 import NavBar from './components/navBar'
 import Footer from './components/footer'
 import axios from 'axios'
+import validator from 'email-validator'
+
 const style = {
     backgroundImage: "url(" + process.env.PUBLIC_URL + './assets/images/contractor-client.jpg)'
 }
@@ -10,10 +12,16 @@ class contact extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
+        if(validator.validate(this.state.email)){
         axios.post("/formsubmit",this.state )
             .then((res) => {
                 console.log(res)
+                window.location.assign('/aboutus')
             })
+        }else {
+            document.getElementById('emailFeedback').classList.add("d-block")
+            document.getElementById('validationDefault02').classList.add("is-invalid")
+        }
     }
     handleChange = (e) => {
         e.preventDefault()
@@ -34,7 +42,7 @@ class contact extends React.Component {
                             </div>
                         </div>
                     </section>
-                    <section className="container">
+                    <section className="container-fluid">
 
                         <div className="row p-4">
                             <div className="col-md-8">
@@ -62,18 +70,31 @@ class contact extends React.Component {
                                             </li>
                                 </ul>
                             </div>
-                            <div className="col-md-4">
-                                <div className="justify-content-center d-flex" >
-                                    <div className="flexbox-column input-group p-4">
-                                        <input className="input1" onChange={this.handleChange} name="name" type="text" for="name" placeholder="First &amp; Last name" />
-                                        <input className="input1" onChange={this.handleChange} name="email" type="text" for="email" placeholder="Email Address" />
-                                        <input className="input1" onChange={this.handleChange} name="address" type="text" for="address" placeholder="Address, City &amp; Zip code" />
-                                        <input className="input1" onChange={this.handleChange} name="phone" type="text" for="phone" placeholder="Phone" />
-                                        <textarea className="input1" onChange={this.handleChange} name="description" placeholder="Reason for Reaching out" rows="4" cols="50"></textarea>
-                                        <input className="input1" onChange={this.handleChange} name="us" type="text" placeholder="How did you hear about us" />
-                                        <button onClick={ this.handleSubmit } className="btn btn-danger mt-4">Submit</button>
+                            <div className="col-md-4 p-3">
+                                <form onSubmit={ this.handleSubmit }>
+                                    <div class="form-row">
+                                        <label for="validationDefault01">Name</label>
+                                        <input onChange={this.handleChange} placeholder="John Smith" name="name" type="text" class="form-control " id="validationDefault01" required />
+                                        
+                                        <label for="validationDefault02">Email</label>
+                                        <input onChange={this.handleChange} placeholder="John.smith@gmail.com" name="email" type="text" for="email" class="form-control" id="validationDefault02" required />
+                                        <div id="emailFeedback" class="invalid-feedback">Email format invalid.</div>
+                                       
+                                        <label for="validationDefault03">City</label>
+                                        <input onChange={this.handleChange} placeholder="Minneapolis" name="city" type="text" class="form-control" id="validationDefault03" required />
+                                        
+                                        <label for="validationDefault04">Phone</label>
+                                        <input onChange={this.handleChange} placeholder="xxx-xxx-xxxx" name="phone" type="text" class="form-control" id="validationDefault04" required />
+                                        
+                                        <label for="validationDefault05">How did you hear about us</label>
+                                        <input onChange={this.handleChange} placeholder="Google, Facebook, etc..." name="us" type="text" class="form-control" id="validationDefault05" />
+                                        
+                                        <label for="validationDefault06">Reason for Reaching Out</label>
+                                        <textarea onChange={this.handleChange} placeholder="I have a question about ..." name="description" class="form-control" id="validationDefault06" rows='2' required ></textarea>
+                                        
+                                        <button type="submit" className="btn btn-danger mx-auto mt-4">Submit</button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
 

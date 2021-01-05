@@ -16,7 +16,7 @@ class footer extends React.Component{
                                         <img className="logo" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/logo.png'} />
                                     </div>
                                 </li>
-                                <li className="list-group-item">MN License #BC665142</li>
+                                {/* <li className="list-group-item">MN License #BC665142</li> */}
                                 <li className="list-group-item">Connect with us</li>
                                 <li className="list-group-item">
                                     <img className="svg1 white-font" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/facebook-white.svg'} />
@@ -30,7 +30,7 @@ class footer extends React.Component{
                                 <li className="list-group-item py-1"><p className="h4">Contact Us</p></li>
                                 <li className="list-group-item py-1"><p><strong>Phone:</strong><br/><a className="grey-font" href="tel:6123335577">612-333-5577</a></p></li>
                                 <li className="list-group-item py-1"><p><strong>Email:</strong><br/><span className="grey-font">OscarsLLC@oscarsllc.com</span></p></li>
-                                <li className="list-group-item py-1"><p><strong>Addresses:</strong><br/>12469 Genesee Way<br/>Apple Valley, MN, 55124</p></li>
+                                <li className="list-group-item py-1"><p><strong>Addresses:</strong><br/>12757 Genesee Way<br/>Apple Valley, MN, 55124</p></li>
                             </ul>
                         </li>
 
