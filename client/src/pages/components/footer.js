@@ -13,14 +13,16 @@ class footer extends React.Component{
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item">
                                     <div className="">
-                                        <img className="logo" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/logo-2.png'} />
+                                        <a href="/"><img className="logo" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/logo-2.png'} /></a>
                                     </div>
                                 </li>
                                 {/* <li className="list-group-item">MN License #BC665142</li> */}
                                 <li className="list-group-item">Connect with us</li>
                                 <li className="list-group-item">
-                                    <img className="svg1 white-font" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/facebook-white.svg'} />
-                                    <img className="svg1 white-font" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/linkedin-white.svg'} />
+                                    <a href="https://www.facebook.com/oscajusco1" target="_blank"><img className="svg1 white-font" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/facebook-brands.svg'} /></a>
+                                    <img className="svg1 white-font" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/linkedin-brands.svg'} />
+                                    <a href="https://www.google.com/search?q=oscars+llc&rlz=1C1CHBD_enUS807US807&oq=oscars+llc&aqs=chrome..69i57j69i59j69i61j69i60l2.2308j0j1&sourceid=chrome&ie=UTF-8" target="_blank">
+                                    <img className="svg1 white-font" alt="svg icon" src={process.env.PUBLIC_URL+'/assets/images/google-brands.svg'} /></a>
                                 </li>
                             </ul>
                         </li>
@@ -53,9 +55,9 @@ class footer extends React.Component{
                                 <li className="list-group-item py-2">
                                     <a className="nav-link white-font" href="/contact">Contact</a>
                                 </li>
-                                <li className="list-group-item py-2">
+                                {/* <li className="list-group-item py-2">
                                    <a className="nav-link white-font" href="/reviews">Reviews</a>
-                                </li>
+                                </li> */}
                                 <li className="list-group-item pt-5">&nbsp;</li>
                             </ul>
                         </li>

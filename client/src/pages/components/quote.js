@@ -30,7 +30,7 @@ class quote extends React.Component{
     }
     render(){
         return(
-                <div className="col-md- bg-image p-0" style={style}>
+                <div className="bg-image bg-position-tc p-0" style={style}>
                     <div className="gradient-blue flex-box">
                         <div className="col-md-8">
                             <p className="display-3">WANT A FREE QUOTE?</p>

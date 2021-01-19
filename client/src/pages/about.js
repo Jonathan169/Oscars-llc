@@ -14,7 +14,7 @@ class about extends React.Component{
                 <NavBar />
                 <main className="">
                     <section className="">
-                        <div className="bg-image-2 flexbox-column" style={style}>
+                        <div className="bg-image-2 bg-position-c flexbox-column" style={style}>
                             <div className="gradient-grey">
                                 <h2 className="display-2 white-font">About Us</h2>
                             </div>

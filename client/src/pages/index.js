@@ -39,10 +39,10 @@ class index extends React.Component{
                         </div>
                     </section>
                     
-                    <section className="">                        
+                    <section className="">
                         <div className="flex-box w-100">
                             <div className="col-md-6 bg-image"
-                                style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/contractor-client.jpg " }}>
+                                style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/contractor-client-2.jpg " }}>
                                 &nbsp;
                             </div>
                             <div className="col-md-6 flexbox-column " >
@@ -85,7 +85,7 @@ class index extends React.Component{
                                     </p>
                                 </div>
                             </div>
-                            <div className="col-md-6 bg-image-3 "
+                            <div className="col-md-6 bg-image"
                                 style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/shower-2.jpg " }}>
                                 &nbsp;
                             </div>
@@ -131,12 +131,17 @@ class index extends React.Component{
                                     </div>
                                 </div>
                                 <div className="card">
-                                    <img src={process.env.PUBLIC_URL + "assets/images/drywall-work.jpg"} className="card-img-top" alt="..." />
+                                    <img src={process.env.PUBLIC_URL + "assets/images/drywall-work-2.jpg"} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Drywall</h5>
                                     </div>
                                 </div>
-
+                                <div className="card">
+                                    <img src={process.env.PUBLIC_URL + "assets/images/outdoor-painting-2.jpg"} className="card-img-top" alt="..." />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Paint Outdoors</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>

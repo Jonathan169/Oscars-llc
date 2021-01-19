@@ -4,7 +4,7 @@ import Footer from './components/footer'
 import Quote from './components/quote'
 import GetQuote from './components/getquote'
 const style = {
-    backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/livingroom.jpg)"
+    backgroundImage: "url(" + process.env.PUBLIC_URL + "assets/images/home-kitchen.jpg)"
 }
 class services extends React.Component {
     state = {}
@@ -15,7 +15,7 @@ class services extends React.Component {
                 <NavBar />
                 <main>
                     <section>
-                        <div className="bg-image-2 flexbox-column" style={style}>
+                        <div className="bg-image-2 bg-position-c flexbox-column" style={style}>
                             <div className="gradient-grey">
                                 <h2 className="display-2 white-font">What We Do</h2>
                             </div>
@@ -42,7 +42,7 @@ class services extends React.Component {
                                             porcelain, ceramic, quarry, and granite. Our team of experts will make the whole 
                                             process from design to installtion as seemless as possible. 
                                             </p>
-                                            <a type="button" className="btn btn-danger" href="/contact">Learn More</a>
+                                            <a type="button" className="btn btn-primary" href="/contact">Learn More</a>
 
                                         </div>
                                     </div>
@@ -65,7 +65,7 @@ class services extends React.Component {
                                             If walls need to be removed or replaced, we can help. We 
                                             are also available to redesign or repair your existing structure.
                                             </p>
-                                            <a type="button" className="btn btn-danger" href="/contact" >Learn More</a>
+                                            <a type="button" className="btn btn-primary" href="/contact" >Learn More</a>
 
                                         </div>
                                     </div>
@@ -91,7 +91,7 @@ class services extends React.Component {
 
 
                                             </p>
-                                            <a type="button" className="btn btn-danger" href="/contact" >Learn More</a>
+                                            <a type="button" className="btn btn-primary" href="/contact" >Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@ class services extends React.Component {
                                             the walls of your school or business, we can help. 
                                             We'll do quick, quality work - so that you can get down to business!
                                             </p>
-                                            <a type="button" className="btn btn-danger" href="/contact" >Learn More</a>
+                                            <a type="button" className="btn btn-primary" href="/contact" >Learn More</a>
                                         </div>
                                     </div>
                                 </div>

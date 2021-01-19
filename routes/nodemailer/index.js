@@ -4,10 +4,10 @@ const { google } =  require('googleapis')
 const validator = require("email-validator")
 require('dotenv').config()
 
-const CLIENT_ID = '421023991698-l56vokj5ku9ei383b46ng7c4s506bquf.apps.googleusercontent.com'
-const CLIENT_SECRET = '_sYKjDmYRGnhAJbmdtaHV5vb'
+const CLIENT_ID = '968541051308-egpgvvtor9bcektfdqt9ek6aa0ibib8r.apps.googleusercontent.com'
+const CLIENT_SECRET = 'rx-H2Z4nfYh3QXLI-F3xngdm'
 const REDIRECT_URI = 'https://developers.google.com/oauthplayground'
-const REFRESH_TOKEN = '1//04VfsZKM-uUAnCgYIARAAGAQSNwF-L9IrNT18Xas09pBdeOFklFyCIuILPcgsGjB5u__hrIxAoa-xwDkJ8ULLJrMhk4P85-M82KI'
+const REFRESH_TOKEN = '1//04xCQ-bpqrR9-CgYIARAAGAQSNwF-L9Irv4KJLG4FsCopdql8UNYNhpCJLhoYJsr86ka2_U1DW6RQP9CFyb9ElP0Z5K0yHA9ZKP8'
 
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID,CLIENT_SECRET,REDIRECT_URI)
 oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN })
@@ -56,7 +56,7 @@ router.post("/formsubmit", function (req, res) {
             html:`<h1>testing the email server please ignore</h1>
                   <h3>Name : ${req.body.name} </h3>
                   <h3>Phone Number: ${req.body.phone} </h3>
-                  <h3>Address : ${req.body.address} </h3>
+                  <h3>Address : ${req.body.city} </h3>
                   <h3>reason for reaching out : ${req.body.description} </h3>
                   <h3>how did you hear about us : ${req.body.us} </h3>`,
         }

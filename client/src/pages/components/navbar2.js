@@ -19,9 +19,9 @@ class navBar extends React.Component {
                             <li className="list-group-item">
                                 <a className="nav-link white-font" href="/gallery">Gallery</a>
                             </li>
-                            <li className="list-group-item">
+                            {/* <li className="list-group-item">
                                <a className="nav-link white-font" href="reviews">Reviews</a>
-                            </li>
+                            </li> */}
                             <li className="list-group-item">
                                 <a className="nav-link white-font" href="/services">Services</a>
                             </li>
